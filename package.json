@@ -2,14 +2,14 @@
   "name": "filmoteka",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://valerie-german.github.io/filmoteka-teamProject/",
+  "homepage": "https://oleksandrpalatniy.github.io/film/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /filmoteka-teamProject/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/valerie-german/filmoteka-teamProject.git"
+    "url": "git+https://github.com/oleksandrpalatniy/film"
   },
   "keywords": [],
   "author": "Valeria German <valerie.g.dsgn@gmail.com>",
