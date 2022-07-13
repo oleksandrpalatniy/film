@@ -1,0 +1,217 @@
+li {
+  list-style-type: none;
+}
+
+.gallery {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.gallery__link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gallery-home-list {
+  max-width: 280px;
+
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    max-width: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -32px;
+    margin-top: -32px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: -16px;
+    margin-top: -32px;
+  }
+}
+
+.gallery-library-list {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -32px;
+    margin-top: -32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: -16px;
+    margin-top: -32px;
+  }
+}
+
+.gallery-item {
+  margin-bottom: 20px;
+  width: 280px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    max-height: 495px;
+    margin-left: 32px;
+    margin-top: 32px;
+    flex-basis: calc(100% / 2 - 32px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-height: none;
+    margin-left: 16px;
+    margin-top: 32px;
+    flex-basis: calc(100% / 3 - 16px);
+    margin-bottom: 0;
+  }
+}
+
+.film-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  transition: 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1280px) {
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.film-card__image {
+  width: 100%;
+  height: 402px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 455px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 574px;
+  }
+}
+
+.card__name {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1280px) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.17;
+  }
+}
+
+.library-information--saved {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.33;
+
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.library-information--queue {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.33;
+
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.card__genre {
+  color: var(--secondary-color-title-card);
+  margin-right: 4px;
+  padding-right: 4px;
+  //border-right: 1 px solid #ff6b08;
+}
+
+.card__text {
+  display: flex;
+  justify-content: baseline;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--secondary-color-title-card);
+
+  @media screen and (min-width: 1280px) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.card__rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 36px;
+  height: 16px;
+  border-radius: 5px;
+  color: var(--hero-text-color);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  margin-left: 8px;
+  background-color: var(--bg-rating);
+
+  @media screen and (min-width: 1280px) {
+    width: 40px;
+    height: 20px;
+  }
+}
+
+.default-img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.slumb {
+  width: auto;
+  height: 500px;
+  background-image: url('https://i.ibb.co/myf5Ynx/no-content-img-mob-1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media screen and (min-width: 768px) {
+    background-image: url('https://i.ibb.co/GWYydks/no-content.jpg');
+    height: 470px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 810px;
+  }
+}
